@@ -153,7 +153,7 @@ class XYButtons(FocusCanvas):
         xdir = [1, 0, -1, 0, 0, 0][self.quadrant]
         ydir = [0, 1, 0, -1, 0, 0][self.quadrant]
         zdir = [0, 0, 0, 0, 1, -1][self.quadrant]
-        magnitude = math.pow(10, self.concentric - 2)
+        magnitude = math.pow(10, self.concentric - 3)
         magnitude *= event.ShiftDown() and 2 or event.ControlDown() and 0.5 or 1
 
         if zdir:

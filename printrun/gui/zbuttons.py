@@ -24,7 +24,7 @@ def sign(n):
 
 class ZButtons(FocusCanvas):
     button_ydistances = [7, 30, 55, 83]  # ,112
-    move_values = [0.1, 1, 10]
+    move_values = [0.01, 0.1, 1]
     center = (30, 118)
     label_overlay_positions = {
         0: (1.1, 18, 9),
@@ -176,4 +176,4 @@ class ZButtonsMini(ZButtons):
         1: (1, 42.8, 12.9),
     }
     imagename = "control_z_mini.png"
-    move_values = [0.1, 10]
+    move_values = [0.01, 1]
